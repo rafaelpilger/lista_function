@@ -10,7 +10,16 @@
     //Entrada
 
 
+
+    const r = Number(prompt('informe o raio do circulo').replace(',', '.'))
+
     //Processamento
+    function circulo(r) {
+        const A = 3.14 * r ** 2
+        const P = 2 * 3.14 * r
+        alert(`a area do circulo é ${A.toFixed(2).replace('.', ',')} metros quadrados e o perimetro do circulo é ${P.toFixed(2).replace('.', ',')}`)
+    }
+    circulo(r)
 
 
     //Saída

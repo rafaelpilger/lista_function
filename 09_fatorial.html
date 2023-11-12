@@ -6,9 +6,18 @@
 
     //Entrada
 
+    let num = parseInt(prompt('informe o numero que deseja'))
 
     //Processamento
+    function Fatorial(num) {
 
+        let inteiro = 1
+        for (let numero = 1; numero <= num; numero++) {
+            inteiro = inteiro * numero
+        }
+        alert(`o fatorial de ${num} é ${inteiro}`)
+    }
+    Fatorial(num)
 
     //Saída
 

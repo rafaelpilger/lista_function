@@ -6,10 +6,16 @@
     */
 
     //Entrada
-
-
+    let  Fahrenheit = Number(prompt(`Digite uma temperatura em Fahrenheit`));    
     //Processamento
-
+    let valor = 0
+    
+    function calculo(Fahrenheit){
+        valor = (Fahrenheit - 32) * 5 / 9
+        alert(valor.toFixed(2))
+       
+    }
+    calculo(Fahrenheit)
 
     //Saída
 

@@ -6,11 +6,18 @@
     */
 
     //Entrada
-
+    let base = Number(prompt(`informe a base!`));
+    let altura = Number(prompt(`informe a altura!`));
 
     //Processamento
+    let valor = 0
 
+    function calculo(base, altura) {
+        valor = (base * altura) / 2
+        alert(valor.toFixed(2))
 
+    }
+    calculo(base, altura);
     //Saída
 
 </script>

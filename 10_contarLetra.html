@@ -6,11 +6,22 @@
     */
 
     //Entrada
-
+    const frase = prompt('informe a frase desejada').trim().toUpperCase();
+const letra = prompt('informe a letra que deseja procurar').toUpperCase();
 
     //Processamento
+function procurar(frase, letra){
+    let letras = []
+    for(let i = 0; i < frase.length; i++){
+        const procura = frase[i]
+        if(procura.includes(letra)){
+            letras.push(procura)
+        }
+    }
+    alert(`a letra desejada aparece ${letras.length} na frase desejada`)
+}
 
-
+procurar(frase,letra)
     //Saída
 
 </script>

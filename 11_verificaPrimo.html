@@ -5,11 +5,23 @@
     */
 
     //Entrada
+    let num = Number(prompt("Insira um número:").trim());
 
+function primar() {
+    let descobrirPrimo = 0;
 
-    //Processamento
-
-
+    for (let i = 1; i <= num; i++) {
+        if (num % i == 0) {
+            descobrirPrimo++;
+        }
+    }
+    if (descobrirPrimo <= 2) {
+        return `O número ${num} é primo!`;
+    } else {
+        return `O número ${num} não é primo!`;
+    }
+}
+alert(primar())
     //Saída
 
 </script>

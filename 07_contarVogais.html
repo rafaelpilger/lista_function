@@ -7,10 +7,20 @@
     */
 
     //Entrada
-
+    const palavra = prompt('informe uma palavra').toUpperCase()
 
     //Processamento
-
+    function vogal(palavra) {
+        let vogais = [];
+        for (let i = 0; i < palavra.length; i++) {
+            const letra = palavra[i]
+            if ('aeiou'.includes(letra)) {
+                vogais.push(letra)
+            }
+        }
+        alert(` a palavra possui ${vogais.length} vogais`)
+    }
+    vogal(palavra)
 
     //Saída
 
